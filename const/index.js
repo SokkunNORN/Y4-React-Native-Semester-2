@@ -1,7 +1,9 @@
 import { COLORS, SIZES, FONTS } from './theme'
+import icons from './icon'
 
-export default { 
+export { 
     COLORS, 
     SIZES, 
-    FONTS 
+    FONTS,
+    icons
 }
