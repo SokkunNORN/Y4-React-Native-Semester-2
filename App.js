@@ -1,61 +1,53 @@
 import React, { Component } from 'react'
 import {
   StyleSheet,
-  TouchableOpacity,
+  SafeAreaView,
+  ScrollView,
   Text,
   View
 } from 'react-native'
 
 class App extends Component {
-  state = {
-    count: 0,
-    time: 'time'
-  }
-
-  onPress = (value) => {
-    this.setState({
-      count: this.state.count + value
-    })
-  }
-
   render () {
     return (
-      <View
-        style={styles.container}
-      >
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => this.onPress(1)}
+      <SafeAreaView>
+        <View
+          style={styles.container}
         >
-          <Text>Plus 1</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.button}
-          onPress={() => this.onPress(-1)}
-        >
-          <Text>Minus 1</Text>
-        </TouchableOpacity>
-        <View>
-          <Text>
-            You clicked { this.state.count } time{ this.state.count > 1 && 's' } 
-          </Text>
+          <ScrollView horizontal>
+            <View style={styles.box}>
+              <Text style={styles.text}>1</Text>
+            </View>
+            <View style={styles.box}>
+              <Text style={styles.text}>2</Text>
+            </View>
+            <View style={styles.box}>
+              <Text style={styles.text}>3</Text>
+            </View>
+          </ScrollView>
         </View>
-      </View>
+      </SafeAreaView>
     )
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
+    height: 400,
+    flexDirection: 'row',
+    backgroundColor: '#ccc'
   },
-  button: {
+  box: {
+    width: 100,
+    height: 100,
+    borderRadius: 10,
+    borderColor: '#000',
+    borderWidth: 1,
+    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ddd',
-    padding: 10,
-    marginBottom: 10
+  },
+  text: {
+    fontSize: 20
   }
 })
 
