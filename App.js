@@ -12,10 +12,9 @@ class App extends Component {
     time: 'time'
   }
 
-  onPress = () => {
+  onPress = (value) => {
     this.setState({
-      count: this.state.count + 1,
-      time: (this.state.count + 1) > 1 ? 'times' : 'time'
+      count: this.state.count + value
     })
   }
 
@@ -26,13 +25,19 @@ class App extends Component {
       >
         <TouchableOpacity
           style={styles.button}
-          onPress={this.onPress}
+          onPress={() => this.onPress(1)}
         >
-          <Text>Click Me</Text>
+          <Text>Plus 1</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.button}
+          onPress={() => this.onPress(-1)}
+        >
+          <Text>Minus 1</Text>
         </TouchableOpacity>
         <View>
           <Text>
-            You clicked { this.state.count } { this.state.time }
+            You clicked { this.state.count } time{ this.state.count > 1 && 's'} 
           </Text>
         </View>
       </View>
