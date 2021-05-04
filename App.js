@@ -37,7 +37,7 @@ class App extends Component {
         </TouchableOpacity>
         <View>
           <Text>
-            You clicked { this.state.count } time{ this.state.count > 1 && 's'} 
+            You clicked { this.state.count } time{ this.state.count > 1 && 's' } 
           </Text>
         </View>
       </View>
