@@ -17,7 +17,7 @@ class App extends Component {
           <Stack.Screen
             name="Home"
             component={Tabs}
-            options={{ title: 'CAM~Hotel' }}
+            options={{ title: 'CAM Hotel' }}
           />
           <Stack.Screen 
             name="Account" 
