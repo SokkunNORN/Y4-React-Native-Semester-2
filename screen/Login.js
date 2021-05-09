@@ -26,7 +26,7 @@ class Login extends Component {
             <DismissKeyboard>
                 <SafeAreaView style={styles.container}>
                     <View style={styles.title}>
-                        <Text style={styles.text}>Welcome to Bot</Text>
+                        <Text style={styles.text}>X-Box</Text>
                         <Text>So many of my smiles are because of you.</Text>
                     </View>
                     <View>
