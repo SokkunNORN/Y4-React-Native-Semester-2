@@ -14,7 +14,7 @@ const DismissKeyboard = ({ children }) => (
     <TouchableWithoutFeedback 
         onPress={() => Keyboard.dismiss()}
     >
-        {children}
+      {children}
     </TouchableWithoutFeedback>
 );
 
