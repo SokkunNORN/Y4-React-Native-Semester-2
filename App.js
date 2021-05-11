@@ -8,7 +8,7 @@ import {
 } from 'react-native'
 
 // import Login from './screen/Login'
-import ReactHook from './screen/ReactHook'
+import ReactHook from './Homework/2/index'
 class App extends Component {
   render () {
     return (

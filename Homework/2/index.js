@@ -7,7 +7,7 @@ import {
     TouchableOpacity,
     Text
 } from 'react-native'
-import { SIZES, COLORS } from '../assets/theme/index'
+import { SIZES, COLORS } from '../../assets/theme/index'
 
 const ReactHook = () => {
 
