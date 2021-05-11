@@ -7,11 +7,12 @@ import {
   View
 } from 'react-native'
 
-import Login from './screen/Login'
+// import Login from './screen/Login'
+import ReactHook from './screen/ReactHook'
 class App extends Component {
   render () {
     return (
-      <Login />
+      <ReactHook />
       // <SafeAreaView>
       //   <View
       //     style={styles.container}
