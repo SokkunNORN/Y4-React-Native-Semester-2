@@ -11,19 +11,7 @@ class App extends Component {
   render () {
     return (
       <NavigationContainer>
-        <Stack.Navigator
-          initialRouteName={"Home"}
-        >
-          <Stack.Screen
-            name="Home"
-            component={Tabs}
-            options={{ title: 'CAM Hotel' }}
-          />
-          <Stack.Screen 
-            name="Account" 
-            component={Account} 
-          />
-        </Stack.Navigator>
+        <Tabs />
       </NavigationContainer>
     )
   }
