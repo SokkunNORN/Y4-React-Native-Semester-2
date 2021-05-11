@@ -1,5 +1,5 @@
 export const COLORS = {
-    base: '#1C7C99',
+    base: '#FF1744',
     while: '#FFF',
     black: '#000'
 }

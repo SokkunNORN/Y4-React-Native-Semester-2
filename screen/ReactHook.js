@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
         marginLeft: SIZES.base(),
         marginRight: SIZES.base(),
         height: SIZES.height,
-        backgroundColor: '#FF1744'
+        backgroundColor: COLORS.base
     },
     textBtn: {
         color: COLORS.while,
