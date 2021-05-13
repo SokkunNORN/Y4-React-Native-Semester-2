@@ -8,7 +8,7 @@ import {
 
 import Animated from 'react-native-reanimated'
 
-import { COLORS } from '../const'
+import { COLORS, SIZES } from '../const'
 
 const { Value } = Animated
 
@@ -82,20 +82,17 @@ export default Header
 
 const styles = StyleSheet.create({
     safe_area_view: {
-        flex: 1
+        flex: 1,
+        backgroundColor: COLORS.secondary
     },
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        paddingHorizontal: 16
-    },
-    img_logo: {
-        width: 152,
-        height: 32
+        paddingHorizontal: SIZES.base()
     },
     fake_icon_box: {
-        backgroundColor: '#e4e6eb',
+        backgroundColor: COLORS.white,
         width: 40,
         height: 40,
         borderRadius: 40,
@@ -107,7 +104,7 @@ const styles = StyleSheet.create({
         flex: 1
     },
     title: {
-        fontSize: 26,
+        fontSize: SIZES.base(3) + 6,
         color: COLORS.primary,
         fontWeight: '500'
     }

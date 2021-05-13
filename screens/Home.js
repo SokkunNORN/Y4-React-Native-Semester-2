@@ -4,6 +4,8 @@ import {
     StyleSheet
 } from 'react-native'
 
+import { SIZES, COLORS } from '../const'
+
 import Header from '../navigation/Header'
 
 class Home extends Component {
@@ -23,10 +25,15 @@ export default Home
 
 const styles = StyleSheet.create({
     fake_post: {
-        height: 250,
-        marginHorizontal: 16,
-        marginTop: 17,
-        borderRadius: 8,
-        backgroundColor: '#ccc'
+        height: 244,
+        marginBottom: SIZES.base(),
+        backgroundColor: COLORS.white,
+        shadowColor: COLORS.secondary1,
+        shadowOffset: {
+            width: 0,
+            height: 3
+        },
+        shadowRadius: 2,
+        shadowOpacity: .3
     }
 })
