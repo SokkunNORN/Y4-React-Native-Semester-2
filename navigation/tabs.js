@@ -10,7 +10,7 @@ import {
 } from '@react-navigation/bottom-tabs'
 
 import { Home, Account } from '../screens'
-import { COLORS, SIZES, icons } from '../const'
+import { COLORS, SIZES, ICONS } from '../const'
 
 const Tab = createBottomTabNavigator()
 
@@ -29,7 +29,7 @@ const Tabs = () => {
                     tabBarIcon: ({focused}) => {
                         <View>
                             <Image
-                                source={icons.home}
+                                source={ICONS.home}
                                 resizeMode='contain'
                                 style={{
                                     ...styles.icon,
@@ -47,7 +47,7 @@ const Tabs = () => {
                     tabBarIcon: ({focused}) => {
                         <View>
                             <Image
-                                source={icons.account}
+                                source={ICONS.account}
                                 resizeMode='contain'
                                 style={{
                                     ...styles.icon,

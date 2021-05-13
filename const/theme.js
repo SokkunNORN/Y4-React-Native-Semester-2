@@ -12,7 +12,9 @@ export const COLORS = {
 
 export const SIZES = {
     // global sizes
-    base: 8,
+    base: (times = 2) => times * 8,
+    height: 44,
+    radius: 8,
     font: (size = 14) => size,
     radius: (size = 30) => size,
     space: (size = 16) => size,
@@ -25,7 +27,3 @@ export const SIZES = {
 export const FONTS = {
 
 }
-
-const appTheme = { COLORS, SIZES, FONTS }
-
-export default appTheme

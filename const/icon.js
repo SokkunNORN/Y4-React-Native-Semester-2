@@ -1,16 +1,16 @@
-const account = require('../assets/icons/account.svg')
-const booking = require('../assets/icons/booking.svg')
-const comment = require('../assets/icons/comment.svg')
-const facebook = require('../assets/icons/facebook.svg')
-const favorite = require('../assets/icons/favorite.svg')
-const google = require('../assets/icons/google.svg')
-const home = require('../assets/icons/home.svg')
-const more = require('../assets/icons/more.svg')
-const notification = require('../assets/icons/notification.svg')
-const phone = require('../assets/icons/phone.svg')
-const pin = require('../assets/icons/pin.svg')
+const account = require('../assets/image/account.svg')
+const booking = require('../assets/image/booking.svg')
+const comment = require('../assets/image/comment.svg')
+const facebook = require('../assets/image/facebook.svg')
+const favorite = require('../assets/image/favorite.svg')
+const google = require('../assets/image/google.svg')
+const home = require('../assets/image/home.svg')
+const more = require('../assets/image/more.svg')
+const notification = require('../assets/image/notification.svg')
+const phone = require('../assets/image/phone.svg')
+const pin = require('../assets/image/pin.svg')
 
-export default {
+export const ICONS = {
     account,
     booking,
     comment,
